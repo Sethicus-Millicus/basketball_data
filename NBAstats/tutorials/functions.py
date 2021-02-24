@@ -40,8 +40,9 @@ df_selected_team = playerstats[(playerstats.TEAM.isin(selected_team))]
 
 
 st.header('Display Player Stats for Today')
-st.write('Data Dimension:' + str(playerstats.shape[0]) +' rows and '+ str(playerstats.shape[0]) +' columns.')
+st.write('Data Dimension:' + str(playerstats.shape[0]) +' rows and '+ str(playerstats.shape[1]) +' columns.')
 st.dataframe(df_selected_team)
+
 
 
 
